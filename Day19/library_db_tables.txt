@@ -1,0 +1,53 @@
+1. admin table
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| admin_id | int          | NO   | PRI | NULL    | auto_increment |
+| username | varchar(50)  | NO   | UNI | NULL    |                |
+| password | varchar(100) | NO   |     | NULL    |                |
+| name     | varchar(100) | YES  |     | NULL    |                |
+| email    | varchar(100) | YES  |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+
+2. student table
++------------+--------------+------+-----+---------+----------------+
+| Field      | Type         | Null | Key | Default | Extra          |
++------------+--------------+------+-----+---------+----------------+
+| student_id | int          | NO   | PRI | NULL    | auto_increment |
+| username   | varchar(50)  | YES  | UNI | NULL    |                |
+| password   | varchar(50)  | YES  |     | NULL    |                |
+| name       | varchar(100) | YES  |     | NULL    |                |
++------------+--------------+------+-----+---------+----------------+
+
+3. book table
++----------+--------------+------+-----+---------+----------------+
+| Field    | Type         | Null | Key | Default | Extra          |
++----------+--------------+------+-----+---------+----------------+
+| book_id  | int          | NO   | PRI | NULL    | auto_increment |
+| title    | varchar(100) | YES  |     | NULL    |                |
+| author   | varchar(100) | YES  |     | NULL    |                |
+| quantity | int          | YES  |     | NULL    |                |
++----------+--------------+------+-----+---------+----------------+
+
+4. issue table
++-------------+-------------+------+-----+---------+----------------+
+| Field       | Type        | Null | Key | Default | Extra          |
++-------------+-------------+------+-----+---------+----------------+
+| issue_id    | int         | NO   | PRI | NULL    | auto_increment |
+| student_id  | int         | YES  | MUL | NULL    |                |
+| book_id     | int         | YES  | MUL | NULL    |                |
+| issue_date  | date        | YES  |     | NULL    |                |
+| return_date | date        | YES  |     | NULL    |                |
+| status      | varchar(20) | YES  |     | NULL    |                |
++-------------+-------------+------+-----+---------+----------------+
+
+5. book_request table
++--------------+-------------+------+-----+---------+----------------+
+| Field        | Type        | Null | Key | Default | Extra          |
++--------------+-------------+------+-----+---------+----------------+
+| request_id   | int         | NO   | PRI | NULL    | auto_increment |
+| book_id      | int         | YES  | MUL | NULL    |                |
+| student_id   | int         | YES  | MUL | NULL    |                |
+| request_date | date        | YES  |     | NULL    |                |
+| status       | varchar(20) | YES  |     | PENDING |                |
++--------------+-------------+------+-----+---------+----------------+

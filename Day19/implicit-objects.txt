@@ -1,0 +1,15 @@
+Request object: It is object of HttpServletRequest interface
+Response object: It is object of HttpServletResponse interface
+Session object: It is object of HttpSession interface
+Application object: It is object of Servletcontext interface interface
+
+Web server creates these objects and following variables are created by auto-generated servlet to keep these objects reference
+
+1. request variable
+2. response variable
+3. session variable
+4. application variable
+
+
+
+

@@ -1,0 +1,9 @@
+Application object
+===================
+1. It is an object of ServletContext interface
+2. Web server creates this object on startup
+3. Every server side program(JSP, servlet, listener,etc) has this object(reference of object)
+JSP page keeps reference of this object in application variable
+Listener contains reference of this object in the object of ServletContextEvent class
+4. This object can keep data in key-value pairs
+5. Since this object is accessible to all server-side programs, so data kept in this object can be accessed by each server-sideprograms

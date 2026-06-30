@@ -1,0 +1,20 @@
+Scripting elements
+==================
+These elements are used to write java code inside JSP pages
+Following three scripting elements are given in JSP
+1. Declration element
+<%!
+//Declare fields and methods here
+%>
+
+2. Scriptlet element
+<%
+//Write java code to perform task here. This code will be inserted inside service method of auto-generated servlet
+%>
+
+3. Expression element
+<%=
+//Write code to bind data with html element here
+%>
+
+<h1><%=name%></h1>

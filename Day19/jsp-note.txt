@@ -1,0 +1,25 @@
+JSP
+===
+JSP (JavaServer Pages) is a server-side technology used in Java web applications to create dynamic web pages.
+It allows you to write HTML,CSS code + Java code together, where Java code runs on the server and generates dynamic content that is sent to the browser.
+JSP is used to develop dynamic, platform-independent web applications using Java.
+JSP is an extension of servlets
+Every JSP page is converted/transtaled into servlet by JSP engine
+This servlet is called auto-generated servlet
+
+Why JSP is used?
+===============
+->To create dynamic web pages
+->To simplify servlet development
+->To separate presentation (UI) from business logic
+->To generate HTML dynamically using Java
+
+How JSP works (Flow)
+=====================
+1. Client requests a .jsp page
+2. Web server (Tomcat) converts JSP into a Servlet
+3. Servlet is compiled
+4. Servlet executes and generates HTML
+5. Response is sent back to the browser
+
+👉 JSP is internally a servlet
